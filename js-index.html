@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>JS demo</title>
+	<!-- my CSS  -->
+	<link href="styleSheet/style.css" rel="stylesheet" >
+
+	<!-- javascript -->
+	<script type="text/javascript">
+		//javascript goes here inside script tags
+		//document.write("Hi"); //write direct to webpage
+		document.write("<h1>Hello World!</h1>"); //using HTML tags
+
+		//this is a var declare and value assigned
+		var name = "JoJO";
+		document.write("Hi " + name+ "\n how are you? "); //making use of the variable
+
+    var edu = "NCI";
+    document.write("<br />Currently a student in " + edu);
+    // delcare var
+    var bal
+    var i1;
+    var i2;
+    // shows pop-up screen and enter the values
+    i1 = parseInt(prompt("Price Of first item"));
+    i2 = parseInt(prompt("Price of second item"));
+    bal = parseInt(prompt("Enter the amount of money"))
+    var total = i1 +i2
+    document.write("<br />Total Price Of Items " + total);
+    //if the price is less than balance then it proceed to payment
+    if (bal > total){
+        document.write("<br />Pay Now");
+    }
+    // if the price exceed more than amount then it cancells oders
+    if (bal < total){
+      document.write("<br />Cancel The Order");
+    }
+
+	</script>
+  </head>
+  <body>
+	<p>my paragraph</p>
+	<a href="page2.html">Page 2</a>
+
+
+  </body>
+</html>
